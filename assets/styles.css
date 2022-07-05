@@ -200,6 +200,7 @@ body.dark{
 .skill__title{
     margin: 0;
     font-size: 1rem;
+    transition: var(--transition);
 }
 
 .skill__icon{

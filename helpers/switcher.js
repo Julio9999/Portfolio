@@ -11,6 +11,10 @@ export function darkMode(){
         d.body.classList.add('dark');
         toggleIcon.classList.replace('fa-moon', 'fa-sun');
         toggleText.textContent = "Light Mode";
+    }else if(l.getItem('theme') == 'light'){
+        d.body.classList.remove('dark');
+        toggleIcon.classList.replace('fa-sun', 'fa-moon');
+        toggleText.textContent = "Dark Mode";
     }
 
     toggleTheme.addEventListener('click', (e)=>{
